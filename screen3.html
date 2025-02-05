@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Management</title>
+    <link rel="stylesheet" href="screen1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="Screen1.js"></script>
+</head>
+<body ng-app="stockApp" ng-controller="stockController">
+    <nav class="navbar">
+        <h1>Stock Management</h1>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="screen1.html">Screen 1</a></li>
+                <li><a href="screen2.html">Screen 2</a></li>
+                <li><a href="screen3.html">Screen 3</a></li>
+            </ul>
+        </div>
+
+        <main class="main-content">
+            <h2>Stock Management</h2>
+            <input type="text" id="searchBar" placeholder="Search stock..." ng-keyup="searchStock()">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="stock in stocks">
+                        <td>{{ stock.id }}</td>
+                        <td>{{ stock.title }}</td>
+                        <td>{{ stock.status }}</td>
+                        <td>{{ stock.note }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

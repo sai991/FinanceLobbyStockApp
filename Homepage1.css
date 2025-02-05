@@ -1,0 +1,65 @@
+/* Reset Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Main Content (80% of the screen) */
+.main-content {
+    flex: 4;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Sidebar (20% of the screen) */
+.sidebar {
+    flex: 1;
+    background-color: hsl(28, 78%, 77%);
+    padding: 20px;
+    height: 100vh;
+    box-shadow: -2px 0px 5px #85eeb11a;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    color: #ff6600;
+}
+
+/* Sections */
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
